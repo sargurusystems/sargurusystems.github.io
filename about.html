@@ -121,6 +121,64 @@
             </div>
         </div>
     </footer>
+    <div class="fb-livechat">
+        <div class="gokys fb-overlay"></div>
+        <div class="fb-widget">
+            <div class="gokys fb-close"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/sargurusystems/" data-tabs="messages"
+                data-width="360" data-height="400" data-small-header="true" data-hide-cover="true"
+                data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/sargurusystems/" class="fb-xfbml-parse-ignore">
+                </blockquote>
+            </div>
+            <div id="fb-root"></div>
+        </div>
+        <a href="https://m.me/goo.keys" title="Send us a message on Facebook" class="gokys fb-button"></a>
+    </div>
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+    <script>
+        $(document).ready(function () {
+            var $fb = {
+                delay: 125,
+                overlay: $(".fb-overlay"),
+                widget: $(".fb-widget"),
+                button: $(".fb-button")
+            };
+            setTimeout(function () {
+                $("div.fb-livechat").fadeIn();
+            }, $fb.delay * 8);
+            $(".gokys").on('click', function (e) {
+                e.preventDefault();
+                if ($fb.overlay.is(":visible")) {
+                    $fb.overlay.fadeOut($fb.delay);
+                    $fb.widget.stop().animate({
+                        bottom: 0,
+                        opacity: 0
+                    }, $fb.delay * 2, function () {
+                        $(this).hide('slow');
+                        $fb.button.show();
+                    });
+                } else {
+                    $fb.button.fadeOut('medium', function () {
+                        $fb.widget.stop().show().animate({
+                            bottom: "60px",
+                            opacity: 1
+                        }, $fb.delay * 2);
+                        $fb.overlay.fadeIn($fb.delay);
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146439786-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-146439786-1');
+    </script>
 </body>
 
 </html>
