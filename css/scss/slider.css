@@ -1,6 +1,5 @@
 .csslider {
   -ms-perspective: 1300px;
-  -webkit-perspective: 1300px;
   perspective: 1300px;
   display: inline-block;
   text-align: left;
@@ -63,7 +62,6 @@
   padding: 0;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -76,10 +74,8 @@
   font-size: 15px;
   font-size: initial;
   line-height: normal;
-  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
   transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
   vertical-align: top;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   white-space: normal;
   color: #ffffff;
@@ -91,7 +87,7 @@
   text-shadow: 1px 1px 0px #333;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
@@ -106,7 +102,6 @@
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -129,7 +124,7 @@
 }
 
 .csslider > .navigation label:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -145,7 +140,6 @@
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -176,7 +170,6 @@
   height: 26px;
   padding: 0 31px;
   z-index: 0;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -185,24 +178,18 @@
   position: absolute;
   top: -50%;
   padding: 13px;
-  -webkit-box-shadow: inset 2px -2px 0 1px #ffffff;
-          box-shadow: inset 2px -2px 0 1px #ffffff;
+  box-shadow: inset 2px -2px 0 1px #ffffff;
   cursor: pointer;
-  -webkit-transition: box-shadow 0.15s, margin 0.15s;
-  -webkit-transition: margin 0.15s, -webkit-box-shadow 0.15s;
-  transition: margin 0.15s, -webkit-box-shadow 0.15s;
   transition: box-shadow 0.15s, margin 0.15s;
-  transition: box-shadow 0.15s, margin 0.15s, -webkit-box-shadow 0.15s;
 }
 
 .csslider > .arrows label:hover {
-  -webkit-box-shadow: inset 3px -3px 0 2px #ff0000;
-          box-shadow: inset 3px -3px 0 2px #ff0000;
+  box-shadow: inset 3px -3px 0 2px #ff0000;
   margin: 0 0px;
 }
 
 .csslider > .arrows label:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -100%;
   left: -100%;
@@ -225,7 +212,6 @@
   display: block;
   left: 0;
   right: auto;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -244,7 +230,5 @@
   display: block;
   right: 0;
   left: auto;
-  -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
-}
-/*# sourceMappingURL=slider.css.map */
+}/*# sourceMappingURL=slider.css.map */
