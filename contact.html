@@ -197,48 +197,56 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact-form-card animate animate--delay-1">
-          <h2 class="contact-form-card__title">Send Us a Message</h2>
-          <p class="contact-form-card__subtitle">
-            Fill in the form below and we'll get back to you as soon as possible.
+        <!-- Why Choose Us -->
+        <div class="animate animate--delay-1" style="display:flex;flex-direction:column;gap:1.25rem">
+          <h2 style="font-size:clamp(1.4rem,2.5vw,1.8rem);font-weight:800;color:var(--clr-dark);margin-bottom:.25rem">
+            Why Choose <span style="color:var(--clr-primary)">Sarguru Systems?</span>
+          </h2>
+          <p style="font-size:14px;color:var(--clr-gray);line-height:1.7;margin-bottom:.5rem">
+            Trusted by hundreds of customers across Tiruchengode for fast, reliable and affordable IT solutions.
           </p>
-          <form id="contactForm" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="name">Your Name <span style="color:var(--clr-accent)">*</span></label>
-                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required />
+
+          <div class="why-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem 1.25rem;text-align:left">
+            <div class="why-card__icon" style="flex-shrink:0;margin:0"><i class="fa-solid fa-bolt"></i></div>
+            <div>
+              <div class="why-card__title">Fast Turnaround</div>
+              <div class="why-card__desc">Most repairs completed same day or within 24 hours — no unnecessary delays.</div>
+            </div>
+          </div>
+
+          <div class="why-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem 1.25rem;text-align:left">
+            <div class="why-card__icon" style="flex-shrink:0;margin:0"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+            <div>
+              <div class="why-card__title">Transparent Pricing</div>
+              <div class="why-card__desc">Free diagnosis and honest upfront quotes — no hidden charges, ever.</div>
+            </div>
+          </div>
+
+          <div class="why-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem 1.25rem;text-align:left">
+            <div class="why-card__icon" style="flex-shrink:0;margin:0"><i class="fa-solid fa-user-shield"></i></div>
+            <div>
+              <div class="why-card__title">Certified Technicians</div>
+              <div class="why-card__desc">Experienced professionals handling all major laptop and desktop brands with care.</div>
+            </div>
+          </div>
+
+          <div class="why-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem 1.25rem;text-align:left">
+            <div class="why-card__icon" style="flex-shrink:0;margin:0"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <div class="why-card__title">Warranty on Repairs</div>
+              <div class="why-card__desc">All repair work comes with a service warranty so you can have complete peace of mind.</div>
+            </div>
+          </div>
+
+          <div class="why-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem 1.25rem;text-align:left">
+            <div class="why-card__icon" style="flex-shrink:0;margin:0;background:rgba(37,211,102,.1);color:#25d366"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <div class="why-card__title">Reach Us on WhatsApp</div>
+              <div class="why-card__desc">
+                <a href="https://wa.me/919843488899?text=Hi%2C%20I%20need%20IT%20service" target="_blank" rel="noopener" style="color:var(--clr-primary);font-weight:600">Chat with us now →</a>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="phone">Phone Number <span style="color:var(--clr-accent)">*</span></label>
-                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required />
-              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="email">Email Address</label>
-              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="service">Service Required <span style="color:var(--clr-accent)">*</span></label>
-              <select id="service" name="service" class="form-select" required>
-                <option value="" disabled selected>Select a service…</option>
-                <option value="laptop">Laptop Sales &amp; Servicing</option>
-                <option value="desktop">Desktop Sales &amp; Servicing</option>
-                <option value="cctv">CCTV Installation &amp; Servicing</option>
-                <option value="networking">Networking Solutions</option>
-                <option value="printer">Printer Sales &amp; Servicing</option>
-                <option value="amc">Annual Maintenance Contract (AMC)</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="message">Message <span style="color:var(--clr-accent)">*</span></label>
-              <textarea id="message" name="message" class="form-textarea" placeholder="Describe your issue or requirement in detail…" required></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center">
-              <i class="fa-solid fa-paper-plane"></i> Send Message
-            </button>
-          </form>
+          </div>
         </div>
 
       </div>
